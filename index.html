@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form for the Bros</title>
+    <link rel="stylesheet" type="text/css" href="master.css">
+  </head>
+  <body>
+    <h1 id="title">Form for the Bros</h1>
+<div id="form-outer">
+  <p id="description">
+    We just want to know how are you feeling today bro, your state of mind is really important to us.
+  </p>
+  <form id="survey-form-bro" action="bro.html" method="get">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Write down your name bro" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Write your e-mail bro, I hope you are okay">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="99" class="input-field" placeholder="Age is just a number bro, but we love you <3">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes how you are feeling right now bro?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option value>We love you bro</option>
+      <option  value="sadBro">Sad</option>
+      <option value="happyBro">Happy</option>
+      <option value="missingExBro">Missing my ex</option>
+      <option value="wishingBro">Wishing life was better</option>
+      <option value="angryBro">Angry</option>
+      <option value="neutralBro">Neutral</option>
+      <option value="shittyBro">Shitty</option>
+      <option value="livingBro">Just living life bro</option>
+      <option value="needyBro">I need her bro</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you enjoy in life?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Think about it bro</option>
+      <option value="cashBro">Money</option>
+      <option value="playerBro">Girls</option>
+      <option value="geekBro">Fortnite</option>
+      <option value="gymBro">Gym</option>
+      <option value="needyBro">My ex</option>
+
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* How likely can you do one of the things you enjoy in life right now?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatingsBro" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatingsBro" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatingsBro" ></label></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Things that can affect your state of mind<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatingsBro">Life man</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatingsBro">Girls bro</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatingsBro">My ex</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatingsBro">Work</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatingsBro">School</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatingsBro">Not knowing what to do in life</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatingsBro">Coding</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatingsBro">Feeling empty</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatingsBro">Feeling left out</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatingsBro">Friends</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatingsBro">Thinking about the future</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Just let it all out bro. Tell us everything you are feeling, we are here to help</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:70px;resize:vertical;" name="comment" placeholder="Life can be hard sometimes bro but we are all going to make it <3"></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  </body>
+</html>
